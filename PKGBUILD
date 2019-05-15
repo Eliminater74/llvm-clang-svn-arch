@@ -201,11 +201,11 @@ build() {
         -DFFI_INCLUDE_DIR:PATH="$(pkg-config --variable=includedir libffi)" \
         -DFFI_LIBRARY_DIR:PATH="$(pkg-config --variable=libdir libffi)" \
         -DLLVM_BUILD_DOCS:BOOL=ON \
-        -DLLVM_ENABLE_SPHINX:BOOL=ON \
+        -DLLVM_ENABLE_SPHINX:BOOL=OFF \
         -DPOLLY_ENABLE_GPGPU_CODEGEN:BOOL=ON \
         -DLINK_POLLY_INTO_TOOLS:BOOL=ON \
-        -DSPHINX_OUTPUT_HTML:BOOL=ON \
-        -DSPHINX_OUTPUT_MAN:BOOL=ON \
+        -DSPHINX_OUTPUT_HTML:BOOL=OFF \
+        -DSPHINX_OUTPUT_MAN:BOOL=OFF \
         -DSPHINX_WARNINGS_AS_ERRORS:BOOL=OFF \
         -DLLVM_BUILD_LLVM_DYLIB:BOOL=ON \
         -DLLVM_LINK_LLVM_DYLIB:BOOL=ON \
